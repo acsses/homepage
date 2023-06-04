@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const app = express()
 const port = 3000
 
-app.use(express.static(__dirname + 'public'));
+app.use(express.static(__dirname + '/public/'));
 app.get('/', async (req, res) => {
     const header_data=req.headers
     const ip_data=req.id
