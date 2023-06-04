@@ -1,0 +1,126 @@
+body{
+    margin:0
+}
+#header{
+    position: fixed;
+    display: flex;
+    height: 32px;
+    width: 100vw;
+    z-index: 10000;
+    justify-content: right;
+    backdrop-filter: blur(2px);
+}
+#header a{
+    display: block;
+    line-height: 25px;
+    height: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', monospace;
+    transition: 0.5s;
+    color: gray;
+    mix-blend-mode: difference;
+    text-decoration: none;
+    border-left: transparent 5px solid;
+    border-right: transparent 5px solid;
+
+}
+#header a:hover{
+    height: 25px;
+    line-height: 25px;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', monospace;
+    border-left: #00BFFF 5px solid;
+    border-right: #00BFFF 5px solid;
+    text-decoration: none;
+    mix-blend-mode: difference;
+
+}
+.menu{
+    mix-blend-mode: difference;
+    box-sizing: border-box;
+    height: 28px;
+    margin: 0;
+    margin-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#head_img{
+    width: 100%;
+}
+#box{
+    position: relative;
+    top: -32px;
+}
+.top-left {
+    position: absolute;
+    top: calc(70vh - 60px);
+    left: 25px;
+    font-family: 'Source Code Pro', monospace;
+    mix-blend-mode: overlay;
+    font-size: 3em;
+}
+#column{
+    width: 70vh;
+    margin: auto;
+}
+#column h1{
+    font-size: 3em;
+    font-family: 'Source Code Pro', monospace;
+}
+#column h3{
+    width: 50%;
+    font-size: 1.5em;
+    font-family: 'Source Code Pro', monospace;
+    margin: auto;
+    text-align: center;
+}
+
+#column p{
+    font-size: 1.25em;
+    font-family: 'Open Sans', sans-serif;
+}
+.links{
+    width: 100%;
+    display:flex;
+}
+.links p{
+    line-height: 32px;
+    margin: 0;
+    font-size: 1em;
+    margin-right: 10px;
+}
+.section{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.footer{
+    width: 100%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.footer svg{
+    margin: 5px;
+}
+#contact{
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+}
+.marker {
+  display: inline;
+  background-image: linear-gradient(90deg, #00BFFF, #00BFFF); /* マーカーの色を指定 */
+  background-repeat: no-repeat;
+  background-position: left bottom; /* マーカーの発生位置を左下に設定 */
+  background-size: 0 40%; /* マーカーの横幅 / 縦幅 */
+  transition: all 0.8s ease; /* マーカーを引く速度 */
+  cursor: pointer; /* ホバー時のカーソルをポインターにする */
+}
+
+/* マーカーホバー時 */
+.marker:hover {
+  background-size: 100% 40%; /* マーカーの横幅を100%にする */
+}
